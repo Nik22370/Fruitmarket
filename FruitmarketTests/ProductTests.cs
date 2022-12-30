@@ -39,4 +39,19 @@ public class ProductTests
         // ASSERT
         Assert.Equal("Basket 14,99", Product1.nameAndPrice());
     }
+    [Fact]
+    public void test_FruitsAndVegetables()
+    {
+        
+        // ARRANGE
+        var Product1 = new Product("Mango", 3.99M);
+        var Product2 = new FruitsAndVegetables(Product1, "0.45", false);
+        // ACT
+        Product2.changeWeight("0.5");
+        Product2.setStatus(true);
+        
+        // ASSERT
+        Assert.Equal("0.5", Product2.Weight);
+        Assert.True(Product2.IsFruit);
+    }
 }
