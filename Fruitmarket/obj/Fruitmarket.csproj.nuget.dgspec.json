@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/deannikolic/Desktop/Fruitmarket/Fruitmarket/Fruitmarket.csproj": {}
+    "/Users/paulherbich/RiderProjects/Fruitmarket/Fruitmarket/Fruitmarket.csproj": {}
   },
   "projects": {
-    "/Users/deannikolic/Desktop/Fruitmarket/Fruitmarket/Fruitmarket.csproj": {
+    "/Users/paulherbich/RiderProjects/Fruitmarket/Fruitmarket/Fruitmarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/deannikolic/Desktop/Fruitmarket/Fruitmarket/Fruitmarket.csproj",
+        "projectUniqueName": "/Users/paulherbich/RiderProjects/Fruitmarket/Fruitmarket/Fruitmarket.csproj",
         "projectName": "Fruitmarket",
-        "projectPath": "/Users/deannikolic/Desktop/Fruitmarket/Fruitmarket/Fruitmarket.csproj",
-        "packagesPath": "/Users/deannikolic/.nuget/packages/",
-        "outputPath": "/Users/deannikolic/Desktop/Fruitmarket/Fruitmarket/obj/",
+        "projectPath": "/Users/paulherbich/RiderProjects/Fruitmarket/Fruitmarket/Fruitmarket.csproj",
+        "packagesPath": "/Users/paulherbich/.nuget/packages/",
+        "outputPath": "/Users/paulherbich/RiderProjects/Fruitmarket/Fruitmarket/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/deannikolic/.nuget/NuGet/NuGet.Config"
+          "/Users/paulherbich/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

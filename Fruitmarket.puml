@@ -6,10 +6,10 @@ class Market
 - Products : IReadOnlyCollection<Product>
 - Address: Address
 - Owner: Owner
-+ Market (string Name, Address address, Owner owner)
++ Market (string name, Address address, Owner owner)
 + changeOwner(Owner owner)
 + changeAddress(Address address)
-+ addProducts(Product product)
++ d
 + removeProducts(Product Product)
 + countProducts()
 }
@@ -37,10 +37,7 @@ class Address <<value object>>{
     - Id: int
     - Street: string
     - Streetnumber: string
-    + Address(string street, string streetnumber)
-    + changeStreet(string street)
-    + changeStreetnumber(string street)
-    + completeAddress()
+    
 }
 class Product{
     - Id: int
