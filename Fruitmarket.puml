@@ -1,0 +1,84 @@
+@startuml
+class Market
+{
+- Id : int 
+- Name: string
+- Products : IReadOnlyCollection<Product>
+- Address: Address
+- Owner: Owner
++ Market (string Name, Address address, Owner owner)
++ changeOwner(Owner owner)
++ changeAddress(Address address)
++ addProducts(Product product)
++ removeProducts(Product Product)
++ countProducts()
+}
+
+class Person{
+    - Id: int
+    - Firstname: string
+    - Lastname: string
+    - Address: Address
+    + Person(string firstname, string lastname, Address address)
+    + changeFirstname(string firstname)
+    + changeLastname(string lastname)
+    + changeAddress(Address address)
+}
+
+class Customer{
+    - Creditcard: string
+    + changeCreditcard(string creditcard)
+}
+class Owner{
+    - Companyname: string
+    + changeCompanyname(string companyname)
+}
+class Address <<value object>>{
+    - Id: int
+    - Street: string
+    - Streetnumber: string
+    + Address(string street, string streetnumber)
+    + changeStreet(string street)
+    + changeStreetnumber(string street)
+    + completeAddress()
+}
+class Product{
+    - Id: int
+    - Guid : Guid
+    - Name: string
+    - Price: decimal
+    + Product(string name, decimal price)
+    + changePrice(decimal price)
+    + changeName(string name)
+    + nameAndPrice()
+}
+class FruitsAndVegetables{
+    - Weight: string
+    - isFruit: bool
+    + changeWeight(string weight)
+    + setStatus(bool isfruit)
+}
+
+class Order{
+    - Id: int
+    - Date: DateTime
+    - Customer: Customer
+    - Products : IReadOnlyCollection<Product>
+    + Order(Customer customer)
+    + totalPrice()
+    + addProducts(Product product)
+    + removeProducts(Product Product)
+    + countProducts()
+}
+
+
+Owner -up-|> Person
+FruitsAndVegetables -up|> Product
+Customer -up-|> Person
+Market o--> Product
+Market <--> Owner
+Order <--> Customer
+Order *--> Product
+Person *--> Address
+Market *--> Address
+@enduml
