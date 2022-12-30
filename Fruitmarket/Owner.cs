@@ -8,6 +8,9 @@ public class Owner : Person
     {
         Companyname = companyname;
     }
+#pragma warning disable CS8618
+    protected Owner() { }
+#pragma warning restore CS8618
 
     public void changeCompanyname(string companyname)
     {

@@ -7,10 +7,12 @@ public class Market
     public int Id { get; private set; }
     public string Name { get; set; }
     public Address Address { get; set; }
-    public Owner Owner { get; set; }
+    public virtual Owner Owner { get; set; }
     protected List<Product> _products = new List<Product>();
     public virtual IReadOnlyCollection<Product> Products => _products;
-
+#pragma warning disable CS8618
+    protected Market() { }
+#pragma warning restore CS8618
     public Market(string name, Address address, Owner owner)
     {
         Name = name;
