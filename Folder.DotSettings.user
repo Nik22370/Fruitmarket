@@ -1,6 +1,4 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8bc2faee_002D406b_002D46a5_002Da573_002Df2bb963e1e90/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="changeOwner" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::7B84256C-50F8-C928-6439-06890A0D8F1E::net6.0::FruitmarketTests.UnitTest1.changeOwner&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Project Location="/Users/paulherbich/RiderProjects/Fruitmarket/FruitmarketTests" Presentation="&amp;lt;FruitmarketTests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
