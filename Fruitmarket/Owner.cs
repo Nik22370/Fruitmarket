@@ -2,18 +2,21 @@ namespace Fruitmarket;
 
 public class Owner : Person
 {
-    
-    public string Companyname { get; set; }
-    public Owner(Person person, string companyname) : base(person.Firstname, person.Lastname, person.Address)
+    public string CompanyName { get; set; }
+    public string CompanyType { get; set; }
+    public Owner(Person person, string companyname, string companyType) : base(person.Firstname, person.Lastname, person.Address)
     {
-        Companyname = companyname;
+        CompanyName = companyname;
+        CompanyType = companyType;
     }
 #pragma warning disable CS8618
-    protected Owner() { }
+    protected Owner()
+    {
+    }
 #pragma warning restore CS8618
 
-    public void changeCompanyname(string companyname)
+    public string AllInfos()
     {
-        Companyname = companyname;
+        return $"{CompanyName} {CompanyType}";
     }
 }

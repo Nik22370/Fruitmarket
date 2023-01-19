@@ -2,25 +2,28 @@ namespace Fruitmarket;
 
 public class FruitsAndVegetables : Product
 {
-    
     public string Weight { get; set; }
     public bool IsFruit { get; set; }
 #pragma warning disable CS8618
-    protected FruitsAndVegetables() { }
+    protected FruitsAndVegetables()
+    {
+    }
 #pragma warning restore CS8618
-    public FruitsAndVegetables(Product product, string weight, bool isfruit) : base(product.Name, product.Price)
+    public FruitsAndVegetables(Product product, string weight, bool isFruit) : base(product.Name, product.Price)
     {
         Weight = weight;
-        IsFruit = isfruit;
+        IsFruit = isFruit;
     }
 
-    public void changeWeight(string weight)
+    public String AllInfos()
     {
-        Weight = weight;
-    }
-
-    public void setStatus(bool isfruit)
-    {
-        IsFruit = isfruit;
+        if (IsFruit)
+        {
+            return $"{base.Name} is a fruit an weights {Weight}";
+        }
+        else
+        {
+            return $"{base.Name} is a vegetable an weights {Weight}";
+        }
     }
 }

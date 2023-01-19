@@ -8,7 +8,6 @@ public class Person
     public Address Address { get; set; }
     public string PersonType { get; private set; } = default!;
 
-    
 
     public Person(string firstname, string lastname, Address address)
     {
@@ -17,21 +16,13 @@ public class Person
         Address = address;
     }
 #pragma warning disable CS8618
-    protected Person() { }
+    protected Person()
+    {
+    }
 #pragma warning restore CS8618
 
-    public void changeFirstname(string firstname)
+    public String AllInfos()
     {
-        Firstname = firstname;
-    }
-
-    public void changeLastname(string lastname)
-    {
-        Lastname = lastname;
-    }
-
-    public void changeAddress(Address address)
-    {
-        Address = address;
+        return $"{Firstname} {Lastname} {Address.Street} {Address.StreetNumber}";
     }
 }

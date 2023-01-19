@@ -11,9 +11,5 @@ public class Customer : Person
     {
         Creditcard = creditcard;
     }
-
-    public void changeCreditcard(string creditcard)
-    {
-        Creditcard = creditcard;
-    }
+    
 }

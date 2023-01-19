@@ -11,7 +11,9 @@ public class Market
     protected List<Product> _products = new List<Product>();
     public virtual IReadOnlyCollection<Product> Products => _products;
 #pragma warning disable CS8618
-    protected Market() { }
+    protected Market()
+    {
+    }
 #pragma warning restore CS8618
     public Market(string name, Address address, Owner owner)
     {
@@ -20,30 +22,19 @@ public class Market
         Owner = owner;
     }
 
-    public void changeOwner(Owner owner)
-    {
-        Owner = owner;
-    }
-
-    public void changeAddress(Address address)
-    {
-        Address = address;
-    }
-
     public void addProducts(Product product)
     {
         _products.Add(product);
-        
     }
 
-    public void addFruitOrVegetable(FruitsAndVegetables f)
+    public void addFruitOrVegetable(Product p, FruitsAndVegetables f)
     {
-        
+        _products.Add(new FruitsAndVegetables(p, f.Weight, f.IsFruit));
     }
+
     public void removeProducts(Product product)
     {
         _products.Remove(product);
-        
     }
 
     public int countProducts()

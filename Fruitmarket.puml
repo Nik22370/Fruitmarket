@@ -27,16 +27,16 @@ class Person{
 class Customer{
     + Creditcard: string
     ---
-    + changeCreditcard(string creditcard)
+    + Customer(Person person, string creditcard)
 }
 class Owner{
     + Companyname: string
     + CompanyType: string
     ---
-    + changeCompanyname(string companytype, string companyname)
+    + Owner(Person person, string companyname, string companyType)
+    + AllInfos()
 }
 class Address <<value object>>{
-    + Id: int
     + Street: string
     + StreetNumber: string
     

@@ -15,22 +15,14 @@ public class Product
         Price = price;
     }
 #pragma warning disable CS8618
-    protected Product() { }
+    protected Product()
+    {
+    }
 #pragma warning restore CS8618
 
-    public void changePrice(decimal price)
-    {
-        Price = price;
-    }
 
-    public void changeName(string name)
-    {
-        Name = name;
-    }
-
-    public string nameAndPrice()
+    public string NameAndPrice()
     {
         return Name + " " + Price;
     }
-    
 }
