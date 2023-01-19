@@ -8,10 +8,10 @@ class Market <<aggregate>>
 + Owner: Owner
 ---
 + Market (string name, Address address, Owner owner)
-+ removeProducts(Product Product)
-+ addProduct(Product Product)
-+ addFruitOrVegetable(FruitsAndVegetables f)
-+ countProducts()
++ RemoveProducts(Product Product)
++ AddProduct(Product Product)
++ AddFruitOrVegetable(FruitsAndVegetables f)
++ CountProducts()
 }
 
 class Person{
@@ -65,10 +65,10 @@ class Order <<aggregate>>{
     + Products : IReadOnlyCollection<Product>
     ---
     + Order(Customer customer)
-    + totalPrice()
-    + addProducts(Product product)
-    + removeProducts(Product Product)
-    + countProducts()
+    + TotalPrice()
+    + AddProducts(Product product)
+    + RemoveProducts(Product Product)
+    + CountProducts()
 }
 
 
