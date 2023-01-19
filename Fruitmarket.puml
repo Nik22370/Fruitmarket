@@ -1,66 +1,69 @@
 @startuml
-class Market
+class Market <<aggregate>>
 {
-- Id : int 
-- Name: string
-- Products : IReadOnlyCollection<Product>
-- Address: Address
-- Owner: Owner
++ Id : int 
++ Name: string
++ Products : IReadOnlyCollection<Product>
++ Address: Address
++ Owner: Owner
+---
 + Market (string name, Address address, Owner owner)
-+ changeOwner(Owner owner)
-+ changeAddress(Address address)
-+ d
 + removeProducts(Product Product)
++ addProduct(Product Product)
++ addFruitOrVegetable(FruitsAndVegetables f)
 + countProducts()
 }
 
 class Person{
-    - Id: int
-    - Firstname: string
-    - Lastname: string
-    - Address: Address
+    + Id: int
+    + Firstname: string
+    + Lastname: string
+    + Address: Address
+    ---
     + Person(string firstname, string lastname, Address address)
-    + changeFirstname(string firstname)
-    + changeLastname(string lastname)
-    + changeAddress(Address address)
+    + AllInfos()
 }
 
 class Customer{
-    - Creditcard: string
+    + Creditcard: string
+    ---
     + changeCreditcard(string creditcard)
 }
 class Owner{
-    - Companyname: string
-    + changeCompanyname(string companyname)
+    + Companyname: string
+    + CompanyType: string
+    ---
+    + changeCompanyname(string companytype, string companyname)
 }
 class Address <<value object>>{
-    - Id: int
-    - Street: string
-    - Streetnumber: string
+    + Id: int
+    + Street: string
+    + StreetNumber: string
     
 }
 class Product{
-    - Id: int
-    - Guid : Guid
-    - Name: string
-    - Price: decimal
+    + Id: int
+    + Guid : Guid
+    + Name: string
+    + Price: decimal
+    ---
     + Product(string name, decimal price)
-    + changePrice(decimal price)
-    + changeName(string name)
     + nameAndPrice()
 }
 class FruitsAndVegetables{
-    - Weight: string
-    - isFruit: bool
-    + changeWeight(string weight)
-    + setStatus(bool isfruit)
+    + Weight: string
+    + isFruit: bool
+    ---
+    + FruitsAndVegetables(Product p, string weight, bool isfruit)
+    + AllInfos()
 }
 
-class Order{
-    - Id: int
-    - Date: DateTime
-    - Customer: Customer
-    - Products : IReadOnlyCollection<Product>
+class Order <<aggregate>>{
+    + Id: int
+    + Date: DateTime
+    + Customer: Customer
+    + Products : IReadOnlyCollection<Product>
+    ---
     + Order(Customer customer)
     + totalPrice()
     + addProducts(Product product)

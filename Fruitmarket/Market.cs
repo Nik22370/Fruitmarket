@@ -35,6 +35,11 @@ public class Market
         _products.Add(product);
         
     }
+
+    public void addFruitOrVegetable(FruitsAndVegetables f)
+    {
+        
+    }
     public void removeProducts(Product product)
     {
         _products.Remove(product);
