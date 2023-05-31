@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S7KfftMcGnw5a3r2lb7geNpaV4BPBp9+e7pAezRk/Dlg6BBorH6i5kPxeiXGAQgdvfUL3WoicHNUSUM3dialBQ==",
+  "dgSpecHash": "nHEnm8tK7TCQRWAGiZeUF79I2eI3igwS0vjV4AKCnFcEqLt8IDi8X/r/KBgURH9qaf7wkt290pyVEN6hKNElWg==",
   "success": true,
   "projectFilePath": "/Users/paulherbich/RiderProjects/Fruitmarket/Fruitmarket/Fruitmarket.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,9 @@
     "/Users/paulherbich/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/paulherbich/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/paulherbich/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/paulherbich/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
+    "/Users/paulherbich/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
+    "/Users/paulherbich/.nuget/packages/microsoft.netcore.app.ref/6.0.13/microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
+    "/Users/paulherbich/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.13/microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512"
   ],
   "logs": []
 }

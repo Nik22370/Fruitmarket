@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fruitmarket.Webapp", "Fruitmarket.Webapp\Fruitmarket.Webapp.csproj", "{2C5A419B-EDF7-4B37-8973-15C71DA30A8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitmarketTests", "FruitmarketTests\FruitmarketTests.csproj", "{AC18CC52-88BF-466D-A513-1140D63525BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fruitmarket", "Fruitmarket\Fruitmarket.csproj", "{DB162079-BABA-47B5-B8B9-167B4B77EDBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C5A419B-EDF7-4B37-8973-15C71DA30A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5A419B-EDF7-4B37-8973-15C71DA30A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5A419B-EDF7-4B37-8973-15C71DA30A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5A419B-EDF7-4B37-8973-15C71DA30A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC18CC52-88BF-466D-A513-1140D63525BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC18CC52-88BF-466D-A513-1140D63525BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC18CC52-88BF-466D-A513-1140D63525BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC18CC52-88BF-466D-A513-1140D63525BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB162079-BABA-47B5-B8B9-167B4B77EDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB162079-BABA-47B5-B8B9-167B4B77EDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB162079-BABA-47B5-B8B9-167B4B77EDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB162079-BABA-47B5-B8B9-167B4B77EDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
